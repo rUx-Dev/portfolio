@@ -7,7 +7,7 @@ function resizeNavbar() {
     document.getElementById("nav-img").style.maxWidth = "100px";
   }
   else {
-    document.getElementById("navbar").style.height = "100vh";
+    document.getElementById("navbar").style.height = "90vh";
     document.getElementById("navbar").style.background = "rgba(0,0,0,0)";
     document.getElementById("nav-img").style.maxWidth = "200px";
   }
@@ -17,3 +17,9 @@ function scrollToView(nav) {
   document.getElementById(nav).scrollIntoView(true, {behavior:"smooth"});
 }
 
+function imageHover(x) {
+  x.style.opacity = "1";
+}
+function imageDefault(x) {
+  x.style.opacity = "0.5";
+}

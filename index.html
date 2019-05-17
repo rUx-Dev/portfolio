@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/fonts/lily/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="./src/css/fonts/quicksand/stylesheet.css" type="text/css" charset="utf-8" />
     <script src="./src/script.js"></script>
   </head>
   <body>
@@ -19,27 +21,45 @@
         </nav>
       </div>
       <div class="content">
-        <section id="home" class="hero">
-          
+        <section id="home">
+          <h1>Hi I'm</h1>
+          <h1>Angelica</h1>
         </section>
-        <section id="about">
+        <section id="about" class="about">
           <h1>About Me</h1>
+          <div class="profile">
+            <img src="./src/images/angelica-seldura.jpg">
+            <div class="info">
+              <span>Angelica B. Seldura</span>
+              <span>Sudtonggan, Basak, Lapu-Lapu City</span>
+              <div class="introduction">
+                <q>Be who you are and say what you feel, because those who mind doesn't matter,  and those who matter don't mind.</q>
+                <p>Hi,  my name is Angelica Seldura. Welcome to my portfolio. I'm 20 year old student pursuing Bachelor of Science in Information Technology diploma in ACLC College of Mandaue. I am  responsible,  dedicated  and open to learning new skills and I love making things happen.</p>
+              </div>
+            </div>         
+          </div>
         </section>
-        <section id="projects" class="cards-section">
-          <h1>Recent Works</h1>
-          <div class="card">
-            <img src="">
-          </div>
-          <div class="card">
-            <img src="">
-          </div>
-          <div class="card">
-            <img src="">
+        <section id="projects" class="projects">
+          <h1>Previous Projects</h1>
+          <div class="cards">
+            <a class="card" href="./projects/" onmouseover="imageHover(this)" onmouseout="imageDefault(this)">
+              <img src="./src/images/project-icon.jpg">
+            </a>
+            <a class="card" href="./projects/" onmouseover="imageHover(this)" onmouseout="imageDefault(this)">
+              <img src="./src/images/project-icon.jpg">
+            </a>
+            <a class="card" href="./projects/" onmouseover="imageHover(this)" onmouseout="imageDefault(this)">
+              <img src="./src/images/project-icon.jpg">
+            </a>
           </div>
         </section>
       </div>
       <footer>
         <div class="footer-contact">
+          <p><i class="fa fa-phone"></i> +63 9424727959</p>
+        </div>
+        <div class="footer-social">
+          <a href="mailto:selduraangelica@gmail.com"><i class="fa fa-envelope"></i></a>
           <a href="http://facebook.com/simplyangelical"><i class="fab fa-facebook"></i></a>
           <a href="https://www.instagram.com/simplyangelical/"><i class="fab fa-instagram"></i></a>
         </div>
