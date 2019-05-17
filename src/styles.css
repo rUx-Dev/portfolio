@@ -56,33 +56,16 @@ body, html {
   text-decoration: none;
 }
 
-.nav-menu a i {
+.nav-icons {
   display: none;
 }
 
 @media screen and (max-width: 600px) {
-  .nav-menu a:not(:nth-child(2)) {
+  .nav-links {
     display: none;
   }
-  #nav-icon {
-    display: block !important;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .nav-menu .responsive {
-    padding-top: 50px;
-    position: relative;
-  }
-  .nav-menu .responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .nav-menu .responsive a {
-    float: none;
+  .nav-icons {
     display: block;
-    text-align: left;
   }
 }
 
