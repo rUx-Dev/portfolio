@@ -25,6 +25,12 @@ p, q, h2{
 p {
   font-size: 1.3rem;
 }
+q {
+  text-align: center;
+}
+.introduction p {
+  text-align: justify;
+}
 .content {
   margin: 0 20%;
   height: 100%;
