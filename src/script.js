@@ -9,7 +9,7 @@ function resizeNavbar() {
   else {
     document.getElementById("navbar").style.height = "90vh";
     document.getElementById("navbar").style.background = "rgba(0,0,0,0)";
-    document.getElementById("nav-img").style.maxWidth = "200px";
+    document.getElementById("nav-img").style.maxWidth = "180px";
   }
 }
 
