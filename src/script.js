@@ -16,10 +16,3 @@ function resizeNavbar() {
 function scrollToView(nav) {
   document.getElementById(nav).scrollIntoView(true, {behavior:"smooth"});
 }
-
-function imageHover(x) {
-  x.style.opacity = "1";
-}
-function imageDefault(x) {
-  x.style.opacity = "0.5";
-}

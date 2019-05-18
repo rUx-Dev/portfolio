@@ -137,7 +137,7 @@ section {
 .cards {
   display: flex;
   flex: 1;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: auto;
 }
@@ -146,10 +146,29 @@ section {
   height: 300px;
   margin: 0 5px;
   border: 1px solid #8f8f8f;
+  position: relative;
 }
-.card img {
+.card .project-image {
   width: 100%;
-  opacity: 0.5;
+  height: 100%;
+  position: absolute;
+  opacity: 1;
+}
+.card .project-description, .card p {
+  top: 175px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  vertical-align: bottom;
+  margin: 0;
+  padding: auto;
+  visibility: hidden;
+}
+.card:hover .project-description {
+  visibility: visible;
+}
+.card:hover .project-image{
+  opacity: 0.3;
 }
 /* end of projects page */
 
