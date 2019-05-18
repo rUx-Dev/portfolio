@@ -116,10 +116,10 @@ q {
     width: 100%;
   }
   .footer-contact {
-    margin-right: 5px;
+    display: none;
   }
   .footer-social a{
-    margin-right: 5px;
+    margin: auto 5px;
   }
 }
 /* end of navbar */
