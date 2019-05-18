@@ -97,11 +97,25 @@ p {
     align-items: center;
     margin: auto 0;
   }
-  .profile-image img{
+  .card {
+    width: 200px;
+    height: 200px;
+  }
+  .card .project-description, .card p {
+    top: 125px;
+    height: 75px;
+  }
+  .profile-image img {
     width: 150px;
   }
   .navbar, .navbar-menu, footer {
     width: 100vw;
+  }
+  .footer-contact {
+    margin-left: 5px;
+  }
+  .footer-social {
+    margin-right: 5px;
   }
 }
 /* end of navbar */
