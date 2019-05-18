@@ -112,7 +112,7 @@ p {
     width: 100vw;
   }
   .footer-contact {
-    margin-left: 5px;
+    margin-right: 5px;
   }
   .footer-social a{
     margin-right: 5px;
@@ -218,6 +218,8 @@ section {
 /* start of projects page */
 .projects{
   margin: 10vh auto 20vh auto;
+  box-sizing: border-box;
+  width: 100%;
 }
 .project-container {
   min-width: 100%;
@@ -283,6 +285,7 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
+  right: 0;
   z-index: 9999;
   box-sizing: border-box;
 }
