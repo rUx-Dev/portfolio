@@ -19,11 +19,15 @@ body, html {
   background-size: cover;
 }
 p, q, h2{
+  text-align: center !important;
   font-family: 'quicksandregular', Arial, Helvetica, sans-serif;
   color: #000;
 }
 p {
   font-size: 1.3rem;
+}
+q {
+  margin: auto;
 }
 .content {
   margin: 0 20%;
@@ -209,7 +213,14 @@ section {
 .info span{
   text-align: center;
 }
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .contact-info p{
+  margin: 10px auto;
   font-size: 1rem;
 }
 /* end of about page */
