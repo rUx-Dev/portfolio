@@ -3,21 +3,22 @@ html {
 }
 body, html {
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: url('../images/graphy.png');
 }
 .main {
   height: 90vh;
   width: 100%;
   top: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('../../src/images/hero.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('../images/hero.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
 }
-p, q{
+p, q, h2{
   font-family: 'quicksandregular', Arial, Helvetica, sans-serif;
   color: #000;
 }
@@ -32,7 +33,7 @@ p {
 /* start of navbar */
 .navbar {
   height: 90vh;
-  width: 100vw;
+  width: 100%;
   top: 0;
   left: 0;
   position: fixed;
@@ -97,7 +98,10 @@ p {
     margin: auto 0;
   }
   .profile-image img{
-    width: 200px;
+    width: 150px;
+  }
+  .navbar, .navbar-menu, footer {
+    width: 100vw;
   }
 }
 /* end of navbar */
@@ -191,6 +195,9 @@ section {
 .info span{
   text-align: center;
 }
+.contact-info p{
+  font-size: 1rem;
+}
 /* end of about page */
 
 
@@ -265,7 +272,7 @@ footer {
 .footer-contact {
   color: #f1f1f1;
   margin-left: 20px;
-  font-size: 0.75rem;
+  font-size: 0.5rem;
 }
 .footer-social a{
   margin-right: 20px;
