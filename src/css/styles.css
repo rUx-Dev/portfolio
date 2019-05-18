@@ -5,7 +5,7 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #ccc;
+  background: #fff;
 }
 .main {
   height: 90vh;
@@ -105,7 +105,6 @@ p {
 section {
   top: 0;
   width: 100%;
-  min-height: 100%;
 }
 #home {
   display: flex;
@@ -158,13 +157,14 @@ section {
   z-index: 20;
 }
 .info {
+  width: 100%;
   min-height: 30vh;
-  width: 80%;
   background: #fff;
   position: relative; 
   margin-top: -75px;
   padding: 95px 20px 20px 20px;
   border: 1px solid #E6ECF8;
+  box-sizing: border-box;
 }
 .effect{
   position:relative;
@@ -193,14 +193,18 @@ section {
 
 
 /* start of projects page */
+.projects{
+  margin: 10vh auto 20vh auto;
+}
 .project-container {
   min-width: 100%;
-  height: 50vh;
+  min-height: 50vh;
   background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  box-sizing: border-box;
 }
 .cards {
   display: flex;
