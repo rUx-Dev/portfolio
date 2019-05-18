@@ -114,7 +114,7 @@ p {
   .footer-contact {
     margin-left: 5px;
   }
-  .footer-social {
+  .footer-social a{
     margin-right: 5px;
   }
 }
@@ -275,13 +275,16 @@ footer {
   width: 100%;
   display: flex;
   flex: 1;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background: rgba(0, 0, 0, 1);
   height: 10vh;
   position: fixed;
   bottom: 0;
+  left: 0;
   z-index: 9999;
+  box-sizing: border-box;
 }
 .footer-contact {
   color: #f1f1f1;
