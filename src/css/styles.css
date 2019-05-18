@@ -16,7 +16,9 @@ body, html {
   background-attachment: fixed;
   background-size: cover;
 }
-
+p, span, q{
+  font-family: 'quicksandregular', Arial, Helvetica, sans-serif;
+}
 .content {
   margin: 0 20%;
   height: 100%;
@@ -55,6 +57,7 @@ body, html {
   text-align: center;
   text-decoration: none;
   margin: 0 30px;
+  font-family: 'quicksandbold', Arial, Helvetica, sans-serif;
 }
 
 .nav-menu .nav-icons {
@@ -73,6 +76,9 @@ body, html {
   }
   .nav-menu .nav-icons {
     display: block;
+  }
+  #nav-img {
+    width: 100px;
   }
   .content {
     margin: 0 5px
@@ -103,7 +109,7 @@ section {
 }
 #home h1 {
   text-align: center;
-  font-family: 'lily_of_the_valley_personalRg', Arial, Helvetica, sans-serif;
+  font-family: 'tahuregular', 'lily_of_the_valley_personalRg', Arial, Helvetica, sans-serif;
   font-size: 10vw;
   color: #f1f1f1;
 }
