@@ -10,7 +10,7 @@ body, html {
 }
 .main {
   height: 90vh;
-  width: 100%;
+  width: 100vw;
   top: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('../images/hero.jpg');
   background-repeat: no-repeat;
@@ -32,12 +32,13 @@ q {
 .content {
   margin: 0 20%;
   height: 100%;
+  box-sizing: border-box;
 }
 
 /* start of navbar */
 .navbar {
   height: 90vh;
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
   position: fixed;
@@ -46,6 +47,7 @@ q {
   align-items: center;
   transition: 1s;
   z-index: 9999;
+  box-sizing: border-box;
 }
 #nav-img {
   border-radius: 50%;
@@ -76,52 +78,6 @@ q {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
-  .nav-menu {
-    justify-content: space-around;
-  }
-  .nav-menu .nav-links {
-    display: none;
-  }
-  .nav-menu a {
-    margin: 0;
-  }
-  .nav-menu .nav-icons {
-    display: block;
-  }
-  #nav-img {
-    width: 100px;
-  }
-  .content {
-    margin: 0 5px
-  }
-  .cards{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto 0;
-  }
-  .card {
-    width: 200px;
-    height: 200px;
-  }
-  .card .project-description, .card p {
-    top: 125px;
-    height: 75px;
-  }
-  .profile-image img {
-    width: 150px;
-  }
-  .navbar, .navbar-menu, footer {
-    width: 100%;
-  }
-  .footer-contact {
-    margin-right: 5px;
-  }
-  .footer-social a{
-    margin-right: 5px;
-  }
-}
 /* end of navbar */
 
 
@@ -137,6 +93,7 @@ section {
   justify-content: space-evenly;
   margin: auto;
   height: 90vh;
+  box-sizing: border-box;
 }
 #home h1 {
   text-align: center;
@@ -154,6 +111,7 @@ section {
 }
 .about, .projects {
   margin: 0 auto;
+  box-sizing: border-box;
 }
 .about {
   padding-top: 6vh;
@@ -168,6 +126,7 @@ section {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  box-sizing: border-box;
 }
 .profile-image{
   display: flex;
@@ -181,6 +140,7 @@ section {
   z-index: 20;
 }
 .info {
+  box-sizing: border-box;
   width: 100%;
   min-height: 30vh;
   background: #fff;
@@ -193,6 +153,7 @@ section {
 .effect{
   position:relative;
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-sizing: border-box;
 }
 .effect:before, .effect:after{
   content:"";
@@ -204,11 +165,13 @@ section {
   left:0;
   right:0;
   border-radius:100px / 10px;
+  box-sizing: border-box;
 }
 .effect:after {
   right:10px;
   left:auto;
   transform:skew(8deg) rotate(3deg);
+  box-sizing: border-box;
 }
 .info span{
   text-align: center;
@@ -255,6 +218,7 @@ section {
   height: 300px;
   margin: 10px;
   position: relative;
+  box-sizing: border-box;
 }
 .card .project-image {
   width: 100%;
@@ -263,16 +227,18 @@ section {
   opacity: 1;
 }
 .card .project-description, .card p {
-  top: 175px;
+  top: 60%;
   left: 0;
   position: absolute;
   text-align: center;
   vertical-align: bottom;
   margin: 0;
-  padding: auto;
+  padding: 5px;
   visibility: hidden;
-  height: 125px;
+  height: 40%;
+  width: 100%;
   background: rgba(80, 80, 80, 0.3);
+  box-sizing: border-box;
 }
 .card:hover .project-description {
   visibility: visible;
@@ -285,7 +251,7 @@ section {
 
 /* start of footer */
 footer {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -311,3 +277,55 @@ footer {
   font-size: 1.5rem;
 }
 /* end of footer */
+
+/* Screens <= 600 */
+@media screen and (max-width: 600px) {
+  .nav-menu {
+    justify-content: space-around;
+  }
+  .nav-menu .nav-links {
+    display: none;
+  }
+  .nav-menu a {
+    margin: 0;
+  }
+  .nav-menu .nav-icons {
+    display: block;
+  }
+  #nav-img {
+    width: 100px;
+  }
+  .content {
+    margin: 0 5vw;
+  }
+
+  .cards{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+  }
+  .card {
+    width: 90vw;
+    height: 90vw;
+  }
+  .card .project-description, .card p {
+    top: 60%;
+    height: 40%;
+  }
+  .navbar, .navbar-menu, footer {
+    width: 100%;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-contact {
+    display: none;
+  }
+  .footer-social a{
+    margin-right: 5px;
+  }
+}
+/* end of media query*/
