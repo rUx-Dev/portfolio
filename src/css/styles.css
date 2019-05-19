@@ -248,6 +248,9 @@ footer {
   margin-left: 20px;
   font-size: 0.5rem;
 }
+.footer-social {
+  margin-right: 20px;
+}
 .footer-social a{
   margin-right: 20px;
   color: #f1f1f1ff;
