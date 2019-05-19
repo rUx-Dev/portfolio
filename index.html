@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./src/css/fonts/quicsandregular/stylesheet.css" type="text/css" charset="utf-8" />
     <script src="./src/script.js"></script>
   </head>
-  <body>
+  <body onload="addEffect()">
     <div class="main">
       <div class="navbar" id="navbar">
         <nav class="nav-menu">
@@ -33,7 +33,7 @@
             <div class="profile-image">
               <img src="./src/images/angelica-seldura.jpg">
             </div>
-            <div class="info effect">
+            <div class="info" id="info">
               <div class="introduction">
                 <q>Be who you are and say what you feel, because those who mind doesn't matter,  and those who matter don't mind.</q>
                 <p>Hi,  my name is Angelica Seldura. Welcome to my portfolio. I'm 20 year old student pursuing Bachelor of Science in Information Technology diploma in ACLC College of Mandaue. I am  responsible,  dedicated  and open to learning new skills and I love making things happen.</p>
@@ -49,17 +49,17 @@
         </section>
         <section id="projects" class="projects">
           <h1>Previous Projects</h1>
-          <div class="project-container effect">
+          <div class="project-container" id="project-container">
             <div class="cards">
-              <a class="card effect" href="http://aseldurawebprogramming.000webhostapp.com/index.php">
+              <a class="card" href="http://aseldurawebprogramming.000webhostapp.com/index.php">
                 <p class="project-description">(ACLC Landing Page)</p>
                 <img src="./src/images/first-project.png" class="project-image">
               </a>
-              <a class="card effect" href="./projects/internship.zip">
+              <a class="card" href="./projects/internship.zip">
                 <p class="project-description">(Internship)</p>
                 <img src="./src/images/project-icon.jpg" class="project-image">
               </a>
-              <a class="card effect" href="./projects/scrabble.zip">
+              <a class="card" href="./projects/scrabble.zip">
                 <p class="project-description">(Scrabble)</p>
                 <img src="./src/images/project-icon.jpg" class="project-image">
               </a>

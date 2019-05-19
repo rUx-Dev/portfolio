@@ -150,29 +150,6 @@ section {
   border: 1px solid #E6ECF8;
   box-sizing: border-box;
 }
-.effect{
-  position:relative;
-  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-sizing: border-box;
-}
-.effect:before, .effect:after{
-  content:"";
-  position:absolute;
-  z-index:-1;
-  box-shadow:0 0 20px rgba(0,0,0,0.8);
-  top:10px;
-  bottom:10px;
-  left:0;
-  right:0;
-  border-radius:100px / 10px;
-  box-sizing: border-box;
-}
-.effect:after {
-  right:10px;
-  left:auto;
-  transform:skew(8deg) rotate(3deg);
-  box-sizing: border-box;
-}
 .info span{
   text-align: center;
 }
@@ -277,6 +254,35 @@ footer {
   font-size: 1.5rem;
 }
 /* end of footer */
+
+/* effects */
+.effect{
+  position:relative;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-sizing: border-box;
+}
+.effect:before, .effect:after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+  top:10px;
+  bottom:10px;
+  left:0;
+  right:0;
+  border-radius:100px / 10px;
+  box-sizing: border-box;
+}
+.effect:after {
+  right:10px;
+  left:auto;
+  transform:skew(8deg) rotate(3deg);
+  box-sizing: border-box;
+}
+.effect1 {
+  box-shadow: 0 10px 6px -6px #777;
+}
+/* end of effects*/
 
 /* Screens <= 600 */
 @media screen and (max-width: 600px) {

@@ -1,4 +1,19 @@
-window.onscroll = function() {resizeNavbar();};
+window.onscroll = function() { resizeNavbar(); };
+
+function addEffect() {
+  var screenSize = window.innerWidth;
+
+  if (screenSize > 600) {
+    document.getElementById('info').classList.add('effect');
+    document.getElementById('project-container').classList.add('effect');
+    document.getElementById('card').classList.add('effect');
+  }
+  else {
+    document.getElementById('info').classList.add('effect1');
+    document.getElementById('project-container').classList.add('effect1');
+    document.getElementById('card').classList.add('effect1');
+  }
+}
 
 function resizeNavbar() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50 ) {
