@@ -196,6 +196,10 @@ section {
   margin: 10px;
   position: relative;
   box-sizing: border-box;
+  transition: 0.5 ease;
+}
+.card:hover .project-image {
+  transform: scale(2);
 }
 .card .project-image {
   width: 100%;
